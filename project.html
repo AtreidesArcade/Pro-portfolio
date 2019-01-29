@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!--Nav Bar/Links to other pages-->
+  <nav class="black" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index 2.html" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="#">Project Portfolio</a></li>
+          <li><a href="passion.html">Passions</a></li>
+           </ul>
+
+      <ul id="nav-mobile" class="sidenav teal">
+          <li><a href="index 2.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="project.html">Project Portfolio</a></li>
+          <li><a href="passion.html">Passions</a></li>
+              </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+ 
+<!--Carousel of projects/ project links and icon pics-->
+
+<div class="carousel">
+    <a class="carousel-item" href="https://jameslfuller.github.io/RPS-Multiplayer/"><img src="images/shutterstock_284660570 copy.jpg" height="200" width="200"></a>
+    <a class="carousel-item" href="https://jameslfuller.github.io/gifTastic/"><img src="images/star-wars-title-logo copy.png" height="200" width="200"></a>
+    <a class="carousel-item" href="https://jameslfuller.github.io/Trivia-Game/"><img src="images/original1 copy.jpg" height="200" width="200"></a>
+    <a class="carousel-item" href="https://jameslfuller.github.io/Crystal-game/"><img src="images/stars copy.jpg" height="200" width="200"></a>
+  </div>
+
+<!--footer-->
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="teal-text">"Talk is cheap, show me the code"</h5>
+          <p class="teal-text text-lighten-4">-Linus Torvalds</p>
+        </div>
+
+        <div class="col l3 s12 right">
+          <h5 class="teal-text">Connect</h5>
+          <ul>
+              <li style="font-size: 50px;"><a href="https://github.com/jameslfuller"><i class="fa fa-github"></i></a></li>
+              <li style="font-size: 50px;"><a href="https://www.instagram.com/colorblindking_/?hl=en"><i class="fab fa-instagram"></i></a></li>
+              <li style="font-size: 50px;"><a href="https://www.linkedin.com/in/james-fuller-33830772/"><i class="fab fa-linkedin"></i></a></li>  
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="teal-text text-lighten-3" href="index 2.html">Luke Fuller</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="https://use.fontawesome.com/93cca337eb.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+  </script>
+
+  </body>
+</html>
